@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .attribution { font-size: 11px; 
     text-align: center;
    
@@ -13,6 +15,7 @@
 body{
     min-height: 100vh;
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +24,8 @@ body{
 img{
     max-width: 100%;
     display: block;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     
 }
 .container{
@@ -34,10 +37,81 @@ img{
 }
 .text_container{
     flex: 1;
-    border: 2px solid black;
-    background:  hsl(225, 100%, 98%);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 2em ;
+    /* border: 2px solid black; */
+    background:  white;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 1em ;
     text-align: center;
+}
+/* typography */
+h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 2rem;
+    padding: .5em  0;
+}
+.text_container > p{
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    padding-bottom: 1em;
+}
+.price_box{
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    /* margin: 0 2em; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: hsl(225, 100%, 98%);
+    padding: 1em 0;
+    margin-bottom: 2em;
+}
+.music{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+h2{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.change > a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 15px;
+    padding: 1em 0;
+    background: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem; 
+    margin-bottom: 1em;
+    /* outline: noneb; */
+    border-style: none;
+}
+button:hover{
+    cursor: pointer;
+    background:hsla(245, 75%, 52%, 0.685) ;
+}
+.btn a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    /* padding-bottom: 2em; */
+}
+.btn{
+    padding-bottom: 2em;
 }
